@@ -1,0 +1,132 @@
+{
+  "coreDevelopment": [
+    {
+      "name": "Git",
+      "enabled": true,
+      "wingetId": "Git.Git",
+      "detectCommand": "git"
+    },
+    {
+      "name": "Visual Studio Code",
+      "enabled": true,
+      "wingetId": "Microsoft.VisualStudioCode",
+      "detectCommand": "code"
+    },
+    {
+      "name": "GitHub Desktop",
+      "enabled": true,
+      "wingetId": "GitHub.GitHubDesktop",
+      "detectPath": "%LOCALAPPDATA%\\GitHubDesktop\\GitHubDesktop.exe"
+    }
+  ],
+  "portablePython": {
+    "enabled": true,
+    "targetPath": "..\\DevRuntime\\Python",
+    "sourceArchive": "Payloads\\PortablePython\\python-embed-amd64.zip"
+  },
+  "browser": [
+    {
+      "name": "Opera GX",
+      "enabled": true,
+      "wingetId": "Opera.OperaGX",
+      "detectPath": "%LOCALAPPDATA%\\Programs\\Opera GX\\opera.exe"
+    }
+  ],
+  "vSCode": {
+    "enabled": true,
+    "extensions": [
+      {
+        "id": "ms-python.python",
+        "enabled": true
+      },
+      {
+        "id": "ms-python.vscode-pylance",
+        "enabled": true
+      },
+      {
+        "id": "ms-vscode.powershell",
+        "enabled": true
+      },
+      {
+        "id": "eamodio.gitlens",
+        "enabled": true
+      }
+    ],
+    "settingsSource": "Profiles\\VSCode\\User",
+    "snippetsSource": "Profiles\\VSCode\\snippets"
+  },
+  "vmArgs": {
+    "enabled": true,
+    "jsonOutputPath": "..\\Config\\VMArgs.json",
+    "devOutputPath": "..\\Config\\VMArgs.DEV",
+    "values": {
+      "EnablePortablePython": true,
+      "UseDevRuntime": true,
+      "DebugMode": false
+    }
+  },
+  "utilities": [
+    {
+      "name": "7-Zip",
+      "enabled": true,
+      "wingetId": "7zip.7zip",
+      "detectCommand": "7z"
+    },
+    {
+      "name": "Macrium Reflect",
+      "enabled": false,
+      "wingetId": "",
+      "installerPath": "Payloads\\Utilities\\MacriumReflectInstaller.exe"
+    }
+  ],
+  "drivers": {
+    "enabled": true,
+    "packages": [
+      {
+        "name": "Network Driver Pack",
+        "enabled": false,
+        "installerPath": "Payloads\\Drivers\\Network\\Setup.exe",
+        "arguments": ""
+      },
+      {
+        "name": "GPU Display Driver",
+        "enabled": false,
+        "installerPath": "Payloads\\Drivers\\GPU\\Setup.exe",
+        "arguments": ""
+      },
+      {
+        "name": "Peripheral Driver Pack",
+        "enabled": false,
+        "installerPath": "Payloads\\Drivers\\Peripherals\\Setup.exe",
+        "arguments": ""
+      }
+    ]
+  },
+  "futureFeatures": {
+    "cloneGitHubRepos": {
+      "enabled": false,
+      "targetFolder": "%USERPROFILE%\\Dev",
+      "repositories": []
+    },
+    "restoreConfigFiles": {
+      "enabled": false,
+      "sourceFolder": "Profiles\\ConfigRestore"
+    },
+    "installPipRequirements": {
+      "enabled": false,
+      "requirementsFiles": []
+    },
+    "createDevFolders": {
+      "enabled": false,
+      "folders": [
+        "%USERPROFILE%\\Dev",
+        "%USERPROFILE%\\Dev\\Tools",
+        "%USERPROFILE%\\Dev\\Repos"
+      ]
+    },
+    "importPortableRuntimes": {
+      "enabled": false,
+      "sourceFolder": "Payloads\\Runtimes"
+    }
+  }
+}

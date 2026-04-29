@@ -1,0 +1,5 @@
+﻿[VMArgs]:{
+    EnablePortablePython=true
+    UseDevRuntime=true
+    DebugMode=false
+}

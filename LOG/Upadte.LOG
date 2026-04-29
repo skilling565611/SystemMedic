@@ -1,0 +1,11 @@
+[0.1.Dev]:{
+
+}
+
+[0.2.Dev]:{
+Added bootstrap installer system
+Added modular setup/config support
+Added runtime/VM argument support
+Added portable Python handling
+Added installer logging/output system
+}
